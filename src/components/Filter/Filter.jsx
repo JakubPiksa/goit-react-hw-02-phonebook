@@ -1,4 +1,6 @@
 import React from 'react';
+import css from './filter.module.css'
+
 
 const Filter = ({ filter, onFilterChange }) => {
   return (
@@ -8,6 +10,7 @@ const Filter = ({ filter, onFilterChange }) => {
       value={filter}
       onChange={onFilterChange}
       placeholder="Search contacts by name"
+      className={css.input}
     />
   );
 };
