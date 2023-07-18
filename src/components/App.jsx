@@ -45,7 +45,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Phonebook</h1>
+      <h1 className={css.h1}>Phonebook</h1>
       <ContactForm onAddContact={handleAddContact} />
       <h2>Contacts</h2>
       <Filter filter={filter} onFilterChange={handleFilterChange} />
